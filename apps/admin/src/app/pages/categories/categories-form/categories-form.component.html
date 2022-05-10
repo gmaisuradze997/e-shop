@@ -1,0 +1,18 @@
+<div class="card">
+  <form [formGroup]="categoryForm">
+    <div class="p-fluid">
+      <div class="p-field">
+        <label for="name">Name</label>
+        <input id="name" type="text" pInputText formControlName="name"/>
+      </div>
+      <div class="p-field">
+        <label for="icon">Icon</label>
+        <input id="icon" type="text" pInputText formControlName="icon"/>
+      </div>
+    </div>
+    <div class="footer">
+      <p-button label="Create" styleClass="p-button p-button-success" (click)="onSubmit()"></p-button>
+      <p-button label="Cancel" styleClass="p-button" (click)="onCancel()"></p-button>
+    </div>
+  </form>
+</div>
